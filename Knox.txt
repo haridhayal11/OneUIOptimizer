@@ -1,0 +1,13 @@
+com.samsung.android.knox.containeragent
+com.samsung.android.knox.analytics.uploader
+com.sec.enterprise.knox.cloudmdm.smdms
+com.samsung.android.knox.attestation
+com.sec.enterprise.knox.attestation
+com.samsung.android.knox.containercore
+com.samsung.knox.securefolder
+com.samsung.android.bbc.bbcagent
+com.android.managedprovisioning
+com.samsung.knox.keychain
+com.knox.vpn.proxyhandler
+com.samsung.ucs.agent.ese
+com.samsung.android.knox.pushmanager

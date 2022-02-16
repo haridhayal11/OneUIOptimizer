@@ -1,0 +1,11 @@
+com.samsung.android.visionarapps
+com.samsung.android.aremoji
+com.samsung.android.aremojieditor
+com.sec.android.mimage.avatarstickers
+com.samsung.android.ardrawing
+com.samsung.android.arzone
+com.samsung.android.app.camera.sticker.facearavatar.preload
+com.samsung.android.livestickers
+com.sec.android.app.pink
+com.samsung.android.stickercenter
+com.samsung.android.scan3d

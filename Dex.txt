@@ -1,0 +1,4 @@
+com.samsung.desktopsystemui
+com.sec.android.app.desktoplauncher
+com.sec.android.app.dexonpc
+com.sec.android.desktopmode.uiservice
