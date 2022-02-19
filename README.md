@@ -18,7 +18,7 @@ This script removes the following apps and much more unnecessary apps from the u
   - Google Feedback
   - Google TTS
   - Youtube & Youtube Music
-- Knox (optional)
+- Knox Apps (optional)
 - Samsung Bloat (Will be removed without confirmation. Not optional) [List](https://github.com/haridhayal11/OneUIOptimizer/blob/main/Samsung.txt) of items to be removed.
 
 ## How to Run this?
