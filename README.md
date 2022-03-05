@@ -53,7 +53,7 @@ bash optimizer.sh
 iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3rUQi6a'))
 ```
 
-### Linux
+### Linux (Work in progress)
 1. Open Terminal and Paste the following.
 ```
 curl -O https://raw.githubusercontent.com/haridhayal11/OneUIOptimizer/main/optimizer_restore.sh
