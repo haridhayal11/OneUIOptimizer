@@ -24,7 +24,7 @@ This script removes the following apps and much more unnecessary apps from the u
 ## How to Run this?
 
 ### Windows
-1. Download ADB and extract it to a folder./ If you have ADB installed and System Variable is set, You can run this from any folder.
+1. Install ADB systemwide from [here](https://github.com/haridhayal11/Systemwide_ADB_Installer)
 2. Go to that folder and Open Powershell as Adminstrator.
 3. Enable ADB in Developer Options (phone).
 4. Copy and Paste the following string into Powershell.
