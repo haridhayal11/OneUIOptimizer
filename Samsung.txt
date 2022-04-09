@@ -40,6 +40,7 @@ com.google.android.cellbroadcastreceiver
 com.google.android.setupwizard
 com.monotype.android.font.foundation
 com.monotype.android.font.samsungone
+com.osp.app.signin
 com.rsupport.rs.activity.rsupport.aas2
 com.samsung.aasaservice
 com.samsung.accesory
@@ -110,6 +111,7 @@ com.samsung.android.sm.policy
 com.samsung.android.smartcallprovider
 com.samsung.android.smartface
 com.samsung.android.smartmirroring
+com.samsung.android.smartsuggestions
 com.samsung.android.smartswitchassistant
 com.samsung.android.spayfw
 com.samsung.android.svcagent
