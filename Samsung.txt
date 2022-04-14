@@ -30,7 +30,6 @@ com.android.calllogbackup
 com.android.cts.ctsshim
 com.android.cts.priv.ctsshim
 com.android.emergency
-com.android.providers.calendar
 com.android.providers.partnerbookmarks
 com.android.providers.userdictionary
 com.android.theme.font.notoserifsource

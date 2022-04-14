@@ -97,7 +97,6 @@ debloat_samsung(){
   adb shell cmd package install-existing com.android.cts.ctsshim
   adb shell cmd package install-existing com.android.cts.priv.ctsshim
   adb shell cmd package install-existing com.android.emergency
-  adb shell cmd package install-existing com.android.providers.calendar
   adb shell cmd package install-existing com.android.providers.partnerbookmarks
   adb shell cmd package install-existing com.android.providers.userdictionary
   adb shell cmd package install-existing com.android.theme.font.notoserifsource

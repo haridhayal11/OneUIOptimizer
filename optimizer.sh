@@ -97,7 +97,6 @@ debloat_samsung(){
   adb shell pm uninstall --user 0 com.android.cts.ctsshim
   adb shell pm uninstall --user 0 com.android.cts.priv.ctsshim
   adb shell pm uninstall --user 0 com.android.emergency
-  adb shell pm uninstall --user 0 com.android.providers.calendar
   adb shell pm uninstall --user 0 com.android.providers.partnerbookmarks
   adb shell pm uninstall --user 0 com.android.providers.userdictionary
   adb shell pm uninstall --user 0 com.android.theme.font.notoserifsource
