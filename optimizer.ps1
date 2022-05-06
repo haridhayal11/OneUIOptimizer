@@ -138,7 +138,7 @@ if ($choice -eq "y") {
 else {write-host "Skipping Knox"}
 
 Write-host "Removing Samsung Bloatware"
-Samsung = get-content Samsung.txt
+$Samsung = get-content Samsung.txt
 foreach ($bloat in $Samsung) {
 adb shell pm uninstall --user 0 $bloat
 }
