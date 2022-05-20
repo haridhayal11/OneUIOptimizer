@@ -235,7 +235,6 @@ debloat_samsung(){
   adb shell cmd package install-existing com.sec.mhs.smarttethering
   adb shell cmd package install-existing com.sec.mldapchecker
   adb shell cmd package install-existing com.sec.modem.settings
-  adb shell cmd package install-existing com.sec.samsung.advp.imssettings
   adb shell cmd package install-existing com.sec.spp.push
   adb shell cmd package install-existing com.sec.sve
   adb shell cmd package install-existing com.skms.android.agent

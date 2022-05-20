@@ -170,7 +170,6 @@ com.sec.location.nsflp2
 com.sec.mhs.smarttethering
 com.sec.mldapchecker
 com.sec.modem.settings
-com.sec.samsung.advp.imssettings
 com.sec.spp.push
 com.sec.sve
 com.skms.android.agent

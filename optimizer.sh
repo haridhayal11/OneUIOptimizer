@@ -235,7 +235,6 @@ debloat_samsung(){
   adb shell pm uninstall --user 0 com.sec.mhs.smarttethering
   adb shell pm uninstall --user 0 com.sec.mldapchecker
   adb shell pm uninstall --user 0 com.sec.modem.settings
-  adb shell pm uninstall --user 0 com.sec.samsung.advp.imssettings
   adb shell pm uninstall --user 0 com.sec.spp.push
   adb shell pm uninstall --user 0 com.sec.sve
   adb shell pm uninstall --user 0 com.skms.android.agent
