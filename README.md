@@ -1,4 +1,4 @@
-# OneUIOptimizer
+# OneUI Optimizer
 
 ## What it does ?
 This script removes the following apps and much more unnecessary apps from the userspace. You can choose which of the following groups to remove except Samsung bloat. Samsung bloat will be removed. Everything you remove using this script can be restored. If you want them back.
