@@ -243,6 +243,35 @@ debloat_samsung(){
   adb shell pm uninstall --user 0 de.axelspringer.yana.zeropage
 }
 
+optimized_pref() {
+adb shell settings put global adaptive_battery_management_enabled 0
+adb shell settings put global private_dns_mode hostname
+adb shell settings put global private_dns_specifier dns.quad9.net
+adb shell settings put global wifi_scan_always_enabled 0
+
+adb shell settings put secure clipboard_show_access_notifications 1
+adb shell settings put secure screensaver_enabled 0
+adb shell settings put secure screensaver_activate_on_sleep 0
+adb shell settings put secure screensaver_activate_on_dock 0
+adb shell settings put secure adaptive_sleep 0
+adb shell settings put secure wake_gesture_enabled 0
+adb shell settings put secure fingerprint_effect 0
+
+adb shell settings put system sound_effects_enabled 0
+adb shell settings put system aod_mode 0
+adb shell settings put system charging_info_always 0
+adb shell settings put system master_motion 0
+adb shell settings put system motion_engine 0
+adb shell settings put system air_motion_engine 0
+adb shell settings put system air_motion_wake_up 0
+adb shell settings put system motion_merged_mute_pause 0
+adb shell settings put system motion_overturn 0
+adb shell settings put system surface_palm_touch 0
+adb shell settings put system mcf_continuity 0
+adb shell settings put system mcf_continuity_permission_denied 1
+adb shell settings put system mcf_permission_denied 1
+adb shell settings put system intelligent_sleep_mode 0
+}
 
 
 clear
@@ -273,7 +302,7 @@ sleep 1
 adb devices
 
 echo 'Do you want to remove all the groups (AR,Dex,Knox,Google,Samsung Bloat)'
-read -p "Choose n if you want to select which apps to remove?[Y/n] " ALL
+read -p "Choose n if you want to select which apps to remove?[y/n] " ALL
 case $ALL in
     [Yy]* ) debloat_arzone
             debloat_dex
@@ -283,39 +312,49 @@ case $ALL in
             ;;
     [Nn]* )
 
-    read -p "Do you want to Remove AR Stickers/AR Zone[Y/n]? " AR
+    read -p "Do you want to Remove AR Stickers/AR Zone[y/n]? " AR
     case $AR in
         [Yy]* ) debloat_arzone ;;
         [Nn]* ) echo 'Skipping AR Stickers/AR Zone ';;
-        * ) echo 'Please answer [Y/n]';;
+        * ) echo 'Please answer [y/n]';;
     esac
 
-    read -p "Do you want to remove Dex[Y/n]? " DEX
+    read -p "Do you want to remove Dex[y/n]? " DEX
     case $DEX in
         [Yy]* ) debloat_dex ;;
         [Nn]* ) echo 'Skipping Dex ' ;;
-        * ) echo 'Please answer [Y/n]' ;;
+        * ) echo 'Please answer [y/n]' ;;
     esac
 
-    read -p "Do you want to remove Google Apps (Playstore & Play Services wont be removed)[Y/n]? " GOOGLE
+    read -p "Do you want to remove Google Apps (Playstore & Play Services wont be removed)[y/n]? " GOOGLE
     case $GOOGLE in
         [Yy]* ) debloat_google ;;
         [Nn]* ) echo 'Skipping Google ';;
-        * ) echo 'Please answer [Y/n]';;
+        * ) echo 'Please answer [y/n]';;
     esac
 
-    read -p "Do you want to remove Knox[Y/n]? " KNOX
+    read -p "Do you want to remove Knox[y/n]? " KNOX
     case $KNOX in
         [Yy]* ) debloat_knox ;;
         [Nn]* ) echo 'Skipping KNOX ';;
-        * ) echo 'Please answer [Y/n]';;
+        * ) echo 'Please answer [y/n]';;
     esac
 
-    echo 'Removing Samsung Bloatware'
-    debloat_samsung;;
-    * ) echo 'Please answer [Y/n]';;
+    read -p "Do you want to remove Samsung[y/n]? (Recommended to Remove) " SAMSUNG
+    case $SAMSUNG in
+        [Yy]* ) debloat_samsung ;;
+        [Nn]* ) echo 'Skipping Samsung Apps ';;
+        * ) echo 'Please answer [y/n]';;
+    esac
+;;
+* ) echo 'Please answer [y/n]';;
 esac
 
-rm -rf CameraAR.txt Google.txt Dex.txt Knox.txt Samsung.txt
+read -p "Do you want apply optimized settings[y/n]? (Recommended to Apply) " PREF
+case $PREF in
+    [Yy]* ) optimized_pref ;;
+    [Nn]* ) echo 'Not Applying Optimized Settings' ;;
+    * ) echo 'Please answer [y/n]' ;;
+esac
 
 adb reboot
