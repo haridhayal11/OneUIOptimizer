@@ -271,6 +271,18 @@ adb shell settings put system mcf_continuity 0
 adb shell settings put system mcf_continuity_permission_denied 1
 adb shell settings put system mcf_permission_denied 1
 adb shell settings put system intelligent_sleep_mode 0
+
+adb shell dumpsys deviceidle whitelist +com.android.internal.systemui.navbar.gestural
+adb shell dumpsys deviceidle whitelist +com.android.systemui
+adb shell dumpsys deviceidle whitelist +com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+adb shell dumpsys deviceidle whitelist +com.samsung.internal.systemui.navbar.gestural_no_hint
+adb shell dumpsys deviceidle whitelist +com.samsung.internal.systemui.navbar.sec_gestural
+adb shell dumpsys deviceidle whitelist +com.samsung.android.honeyboard
+adb shell dumpsys deviceidle whitelist +com.android.internal.systemui.navbar.gestural_wide_back
+adb shell dumpsys deviceidle whitelist +com.android.internal.systemui.navbar.gestural_narrow_back
+adb shell dumpsys deviceidle whitelist +com.android.internal.systemui.navbar.gestural_extra_wide_back
+adb shell dumpsys deviceidle whitelist +com.sec.android.app.launcher
+adb shell dumpsys deviceidle whitelist +com.samsung.android.biometrics.app.setting
 }
 
 
