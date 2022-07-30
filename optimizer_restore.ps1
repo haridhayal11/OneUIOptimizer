@@ -107,7 +107,7 @@ while ($choice -notmatch "[y|n]") {
     }
 
 if ($choice -eq "y") {
-	$Knox = get-content Samsung.txt
+	$Samsung = get-content Samsung.txt
 	foreach ($bloat in $Samsung) {
 	adb shell cmd package install-existing $bloat
 	}
