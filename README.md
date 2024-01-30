@@ -24,14 +24,19 @@ This script removes the following apps and much more unnecessary apps from the u
 ## How to Run this?
 
 ### Windows
-1. Install ADB systemwide from [here](https://github.com/haridhayal11/Systemwide_ADB_Installer)
-2. Go to that folder and Open Powershell as Adminstrator.
-3. Enable ADB in Developer Options (phone).
-4. Copy and Paste the following string into Powershell.
-```
-iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3rQROpR'))
-```
-5. Authorize the PC on your phone and follow the prompts in Powershell.
+1. Use the newer GUI version from [here](https://github.com/haridhayal11/OneUIOptimizer_GUI) (Recommended)
+
+or 
+
+2. Use the this script
+   - Install ADB systemwide from [here](https://github.com/haridhayal11/Systemwide_ADB_Installer)
+   - Open Powershell as Adminstrator.
+   - Enable ADB in Developer Options (phone).
+   - Copy and Paste the following string into Powershell.
+    ```
+    iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3rQROpR'))
+    ```
+   - Authorize the PC on your phone and follow the prompts in Powershell.
 
 
 ### Linux
@@ -47,7 +52,7 @@ bash optimizer.sh
 ## How to Restore apps
 
 ### Windows
-1. Go to the ADB folder and Open Powershell as Adminstrator.
+1. Open Powershell as Adminstrator.
 2. Copy and Paste the following string into Powershell.
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3rUQi6a'))
